@@ -22,6 +22,7 @@ export default {
 }
 
 button {
+    margin-left: .5rem;
     border: none;
     background: none;
     height: 20px;

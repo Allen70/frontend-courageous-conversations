@@ -38,15 +38,15 @@ import Login from './views/Login'
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 body {
-  background-color: rgb(245, 245, 245);
+  background-color: hsl(0, 0%, 97%);
   font-family: 'Montserrat', sans-serif;
   #navbar {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #A89285;
-    box-shadow: 0px 0px 1px 1px grey;
+    background-color: #DFEDF8;
+    box-shadow: 0px 1px 1px 0px rgb(218, 218, 218);
 
     .link {
       display: inline-block;

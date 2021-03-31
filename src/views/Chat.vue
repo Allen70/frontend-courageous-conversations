@@ -78,7 +78,7 @@ import Conversation from '../Components/Conversation'
                 }
                 if (found? found.length > 0: false){
                     this.count = this.count + 1
-                    return alert("Your message includes some harsh language and sounds very accusatory. Take time to reframe your statement, in a kind and generous manner.")
+                    return alert("Your message includes some harsh language. Take time to reframe your statement, in a kind and generous manner.")
                 }
                 this.$socket.client.emit('message', {message, user: `${this.user}`});
                 this.message = ""
@@ -117,6 +117,8 @@ import Conversation from '../Components/Conversation'
     padding-right: 1rem;
     padding-bottom: 0;
     padding-top: 0;
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 3px;
 }
 .right-bar {
     width: 100%;
@@ -131,13 +133,13 @@ import Conversation from '../Components/Conversation'
     width: 100%;
     max-width: 550px;
 }
-
 .chat-container {
     display: relative;
-    background-color: #A89285;
+    background-color: azure;
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 500px;
     height: 500px;
     overflow: scroll;
 }
@@ -146,7 +148,7 @@ import Conversation from '../Components/Conversation'
     width: 500px;
     margin: 2px;
     p {
-        background-color: #88f78ee1;
+        background-color: #beeafd62;
         border-radius: 20px;
         margin: 0px;
         padding: 1rem;
@@ -154,7 +156,7 @@ import Conversation from '../Components/Conversation'
 }
 
 #theirs {
-    background-color: #e8fc92d8;
+    background-color: #ebebeb81;
 }
 
 form {
@@ -167,6 +169,15 @@ form {
     display: inline-block;
     overflow-wrap: break-word;
     width: 100%;
+    background-color: rgba(196, 231, 255, 0.459);
+    border-radius: 1rem;
+    padding: 0 .5rem;
+}
+
+#submit {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border-radius: 12px;
 }
 
 </style>
